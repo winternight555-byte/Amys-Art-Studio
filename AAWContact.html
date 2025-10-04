@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AAW.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="search-controls">
+                <form class="search" action="/action_page.php">
+                    <label for="sitesearch">Search:</label>
+                        <input type="search" id="websearch" name="websearch">
+                            <input type="submit">
+                </form>
+                <select class="dropdown">
+                    <option value="">Filter by Category</option>
+                        <option value="portraits">Portraits</option>
+                            <option value="landscapes">Landscapes</option>
+                                <option value="animals">Animals</option>
+                                    <option value="abstract">Abstract</option>
+                </select>
+            </div>
+                <!--Logo should go in this div-->
+            <div id="Logo">
+                <img src="Letter A Logo.png" alt="Amy's Logo" style="width:200px"> <!--Create border radius of maybe 50% to be rounded-->
+            </div>
+        </div>
+    <h1>Amy's Art Studio</h1> 
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="AAWHome.html">Home</a></li>
+            <li><a href="AAWAbout.html">About</a></li>
+            <li><a href="AAWGallery.html">Gallery</a></li>
+            <li><a href="AAWContact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="contact">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                    <p>Stop by during business hours or contact us for pricing and requests!</p>
+            </div>
+        <div class="rowC">
+            <div class="columnC">
+      <img src="ContactPhoto.jpg" style="width:100%">
+            </div>
+        <div class="columnC">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your First name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write us your thoughts.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+        </div>
+    </div>
+    </main>
+</body>
+ <footer>
+        <address>
+        <p> Art by Amy White, Robert Klaus and Cynthia Robinson<br>
+            Visit us at US Highway 19 NW Largo FL, 37789<br>
+            Store Hours:<br>
+            Monday-Thursday: 10am-3pm<br>
+            Friday-Saturday: 12pm-4pm<br>
+            Sunday: Closed
+        </p>
+    </address>
+   <p>CopyRight &copy; Amy Studios all rights reserved </p>
+    </footer>
+</html>
