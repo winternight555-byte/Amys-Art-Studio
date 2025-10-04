@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="AAW.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="search-controls">
+                <form class="search" action="/action_page.php">
+                    <label for="sitesearch">Search:</label>
+                        <input type="search" id="websearch" name="websearch">
+                            <input type="submit">
+                </form>
+                <select class="dropdown">
+                    <option value="">Filter by Category</option>
+                        <option value="portraits">Portraits</option>
+                            <option value="landscapes">Landscapes</option>
+                                <option value="animals">Animals</option>
+                                    <option value="abstract">Abstract</option>
+                </select>
+            </div>
+                <!--Logo should go in this div-->
+            <div id="Logo">
+                <img src="Letter A Logo.png" alt="Amy's Logo" style="width:200px"> <!--Create border radius of maybe 50% to be rounded-->
+            </div>
+        </div>
+    <h1>Amy's Art Studio</h1> 
+    </header>
+    <nav> 
+        <ul>
+            <li><a href="AAWHome.html">Home</a></li>
+            <li><a href="AAWAbout.html">About</a></li>
+            <li><a href="AAWGallery.html">Gallery</a></li>
+            <li><a href="AAWContact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="About">
+            <h2>About Us.</h2>
+                <div class="A-Container">
+                    <h3>Amy's Art Studio</h3>
+                        <p>Welcome to our website, at Amy's Art Studio we value art and peace.<br>
+                        We have many artists working day and night to ensure you have the best pieces for your home and office decor<br>
+                        We offer works for landscapes, portraits, animals, abstract pieces and more. Time frames will vary on sizes with affordable prices for all our artworks.<br>
+                        Come on down to our studio at: US Highway 19 NW Largo FL, 33778, we also offer weekly art and wine classes, as well walkthroughs.<br>
+                        Here is where you want to be!</p>
+                </div>
+        </div>
+    <button onclick="toggleCalendar()" class="calendar-toggle">Show Weekly Calendar</button>
+        <div class="calendar-container">
+                <tableborder="1" style="width:100%; border-collapse: collapse; text-align: center;">
+                    <caption style="font-size: 1.5em; margin-bottom: 10px;">Weekly Event Calendar</caption>
+                        <thead style="background-color: sienna; color: white;">
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10:00 AM</td>
+                                <td>Monday Fun Day</td>
+                                <td>Painting Class</td>
+                                <td>Studio Open</td>
+                                <td>Gallery Tour</td>
+                                <td>Studio Open</td>
+                                <td>Art Class</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>12:00 PM</td>
+                                <td>Portrait Workshop</td>
+                                <td>Landscape Demo</td>
+                                <td>Abstract Painting</td>
+                                <td>Paint & Wine (21 and up)</td>
+                                <td>Live Sketching</td>
+                                <td>Gallery Tour</td>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <td>2:00 PM</td>
+                                <td>Paint & Wine (21 and up)</td>
+                                <td>Abstract Painting</td>
+                                <td>Paint & Wine (21 and up)</td>
+                                <td>Gallery Tour</td>
+                                <td>Gallery Tour</td>
+                                <td>Paint & Wine</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    <script>
+  function toggleCalendar() {
+    const calendar = document.getElementById("calendar-container");
+    const button = document.querySelector(".calendar-toggle");
+    if (calendar.style.display === "none") {
+      calendar.style.display = "block";
+      button.textContent = "Hide Weekly Calendar";
+    } else {
+      calendar.style.display = "none";
+      button.textContent = "Show Weekly Calendar";
+    }
+  }
+    </script>
+    </main>
+</body>
+    <footer>
+        <address>
+        <p> Art by Amy White, Robert Klaus and Cynthia Robinson<br>
+            Visit us at US Highway 19 NW Largo FL, 37789<br>
+            Store Hours:<br>
+            Monday-Thursday: 10am-3pm<br>
+            Friday-Saturday: 12pm-4pm<br>
+            Sunday: Closed
+        </p>
+    </address>
+   <p>CopyRight &copy; Amy Studios all rights reserved </p>
+    </footer>
